@@ -23,7 +23,6 @@ const showLi = () => {
 
    mod.innerHTML = newLi
 
-   localStorage.setItem("list", JSON.stringify(myArray))
 
 }
 
@@ -49,13 +48,3 @@ const completar = index => {
    myArray[index].complete = !myArray[index].complete
    showLi()
 }
-
-function reloadingTask() {
-   let lista = localStorage.getItem("list")
-   myArray = JSON.parse(lista)
-   console.log(myArray)
-
-   showLi()
-}
-
-reloadingTask()
