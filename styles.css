@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+body {
+    background-color: darkorchid;
+}
+div {
+    position: relative;
+    width: 450px;
+    box-shadow: 1px 4px 10px black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 20px;
+    
+}
+
+input {
+    width: 255px;
+    height: 35px;
+    margin: 15px;
+    padding: 10px;
+}
+
+#mainButt {
+    font-size: 18px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 7px 12px;
+    margin: 25px 0px 0px 0px;
+    cursor: pointer;
+    
+}
+
+#mainButt:hover {
+    background-color: rgb(153, 110, 194);
+}
+#mainButt:active {
+    background-color: blueviolet;
+}
+
+ul {
+    margin-top: 30px;
+    width: 100%;
+    list-style-type: none;
+}
+
+li {
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    padding: 20px 45px;
+    position: relative;
+    margin-top: 30px;
+    box-shadow: 1px 4px 10px black;
+
+}
+
+#rocketB {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background-color: transparent;
+    color: blueviolet;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+#thrashB {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    
+}
+
+p {
+    font-size: 15px;
+
+}
+
+#rocketB:hover {
+    color: #ffffffff;
+    background-color: blueviolet;
+}
+
+#rocketB:active {
+    color: rgb(206, 206, 206);
+    background-color: rgb(103, 34, 168);
+}
+
+#thrashB:hover {
+    color: #ffffffff;
+    background-color: red;
+}
+
+#thrashB:active {
+    color: rgb(231, 231, 231);
+    background-color: rgb(194, 0, 0);
+}
+
+li:hover #rocketB {
+    opacity: 1;
+    
+}
+
+li:hover #thrashB {
+    opacity: 1;
+}
+
+.completar {
+    background-color: rgb(52, 184, 52);
+    color: #ffffffff;
+}
